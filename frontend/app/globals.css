@@ -13,11 +13,29 @@ body {
   background: var(--background);
   font-family: "Lato" , serif;
 }
+.no-scroll{
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  -ms-overflow-style: none; /* IE and Edge */ scrollbar-width: none; /* Firefox */
+}
+.no-scroll::-webkit-scrollbar{
+  /* width: 0px;
+  background: transparent; */
+  display: none;
+  
+}
 @layer components{
   /* .text-heading{
     @apply
   } */
   .justify-item-between{
     @apply flex justify-between items-center
+  }
+  #banners div{
+    @apply rounded-md bg-slate-200 flex items-center justify-center overflow-hidden
+  }
+  #banners div img{
+    @apply w-full h-full object-cover
   }
 }

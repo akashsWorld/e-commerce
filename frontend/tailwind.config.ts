@@ -12,8 +12,10 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
         'text':'#929292',
+        'color-heading':'#3D3D3D',
         'color-blue':'#4072EE',
-        'color-card':'#D4F1F9'
+        'color-card':'#D4F1F9',
+        'color-highlight':'#16C61C'
       },
     },
     fontFamily:{
