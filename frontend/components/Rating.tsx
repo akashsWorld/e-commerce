@@ -10,7 +10,7 @@ const Rating = ({rating}:{rating:number}) => {
         rating=0
     }
     const complete:number = Math.floor(rating)
-    const notRated:number = 5 - complete;
+    const notRated:number = 5 - rating;
     const extra:number = notRated-Math.floor(notRated);
     const blank:number = Math.floor(notRated);
     

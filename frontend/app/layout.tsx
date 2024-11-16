@@ -20,7 +20,7 @@ export default function RootLayout({
         <header>
           <Navbar/>
         </header>
-        <main>
+        <main className="container mx-auto">
           {children}
         </main>
       </body>
