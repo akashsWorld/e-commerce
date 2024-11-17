@@ -5,8 +5,35 @@ import Image from "next/image";
 import banner from '@/public/product-banner.png'
 import Section from "@/components/Section";
 import Rating from "@/components/Rating";
+import ProductCard from "@/components/ProductCard";
+import ProductCardSecondary from "@/components/ProductCardSecondary";
 
 export default function Home() {
+
+  const dummyContents:
+  {
+    title:string,
+    tags:string[],
+    price:{
+      discount:number,
+      actualPrice:number,
+    },
+    rating:number,
+    thumbnail:string
+  }[] =[
+    {
+      title:' Lorem ipsum, dolor sit amet consectetur adipisicing elit. A veritatis nisi illum cumque nemo.',
+      tags:['trending','blue','fashion'],
+      price:{
+        discount:60,
+        actualPrice:100
+      },
+      rating:5,
+      thumbnail:'url'
+    }
+  ]
+
+
   return (
   <>
     <Categories/>
@@ -23,7 +50,23 @@ export default function Home() {
         <div className="row-span-3"><Image src={banner} alt="banner"/></div>
       </div>
     </section>
-    <Section heading="Best Selling" sectionName=""/>
+    <Section heading="Best Selling" sectionName="">
+        <ProductCard/>
+        <ProductCard/>
+        <ProductCard/>
+        <ProductCard/>
+        <ProductCard/>
+        <ProductCard/>
+    </Section>
+    <Section heading="Top Deals" sectionName="">
+      <ProductCardSecondary/>
+      <ProductCardSecondary/>
+      <ProductCardSecondary/>
+      <ProductCardSecondary/>
+    </Section>
+    <Section heading="Suggested For You" sectionName="suggetions">
+      
+    </Section>
   </>
   );
 }

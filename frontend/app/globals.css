@@ -33,7 +33,7 @@ body {
     @apply flex justify-between items-center
   }
   #banners div{
-    @apply rounded-md bg-slate-200 flex items-center justify-center overflow-hidden
+    @apply rounded-md bg-slate-200 flex items-center justify-center overflow-hidden 
   }
   #banners div img{
     @apply w-full h-full object-cover

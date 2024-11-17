@@ -15,7 +15,7 @@ const Navbar = () => {
 
   return (
     <nav className="w-full flex items-center py-6 justify-between container mx-auto px-10 gap-4">
-        <div className="flex items-center justify-center px-2 gap-1">
+        <div className="flex items-center justify-center px-2 gap-1 cursor-pointer">
             <Image src={logo} width={24} height={26} alt="cromcart"/>
             <h1 className="font-bold font-heading text-xl py-1 px-2 text-color-blue tracking-wider">Cromkart</h1>            
         </div>
