@@ -10,7 +10,7 @@ const Section = ({heading,sectionName,children}:{heading:string,sectionName:stri
   return (
     <section id={sectionName} className='mt-5 flex flex-col gap-10 px-10 py-10'>
       <Heading content={heading}/>
-      <div className='flex no-scroll h-fit w-fit gap-8 p-20 relative'>
+      <div className='flex h-fit w-fit gap-8 p-20 relative'>
         {children}
       </div>
     </section>

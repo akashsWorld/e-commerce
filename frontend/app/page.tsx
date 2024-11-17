@@ -32,8 +32,6 @@ export default function Home() {
       thumbnail:'url'
     }
   ]
-
-
   return (
   <>
     <Categories/>
